@@ -1,0 +1,27 @@
+{
+  "name": "vigilant-system",
+  "version": "1.0.0",
+  "description": "Generic OpenAI↔Anthropic conversion proxy – exposes /v1/models, /v1/messages, /v1/chat/completions and /v1/responses, with thinking-block support and config.json-driven configuration.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.9",
+    "@hono/node-server": "^1.19.10",
+    "ai": "^6.0.174",
+    "hono": "^4.12.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
